@@ -1,0 +1,7 @@
+<h1>Countries of the World</h1>
+<ul>
+  @foreach(var Country in Model)
+  {
+    <li><a href='/CountryD/@Country.GetCode()'>@Country.GetName()</a></li>
+  }
+</ul>
